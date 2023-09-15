@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;400;500;600;700&display=swap');
+
+body{
+    font:18px "Victor Mono", monospace;
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background: url("../img/home.jpeg") no-repeat center;
+        background-size: cover;
+    }
+}
+
+.card{
+    box-shadow: 0 18px 200px -60px #000000;
+    border-radius: 50px;
+    width: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff40;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .card_img{
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+    }
+
+    .card_info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-size: 22px;
+        
+        >h1{
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .presentation_card_loc{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+
+    .card_proyects{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .proyects_title{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .proyects_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 40px;
+            width: 400px;
+            border: 2px solid #ffffff40;
+            padding: 1rem 5rem; 
+            margin: 25px;
+        }
+    }
+
+    .card_social_media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        >a{
+            display: inline-flex;
+            width: 55px;
+            height: 55px;
+            margin: 15px;
+            border-radius: 40%;
+            align-items: center;
+            color: #ffffff;
+            position: relative;
+            flex-shrink: 0;
+        }
+    }
+}
+
+
+
